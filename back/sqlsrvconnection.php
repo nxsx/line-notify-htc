@@ -1,8 +1,8 @@
 <?php
 
-define("HRPORTAL_CONNECTION", "sqlsrv:server=190.7.10.22;Database=HRPortal");
-define("HRPORTAL_USERADMIN", "hruser");
-define("HRPORTAL_PASSWORDADMIN", "");
+define("HRPORTAL_CONNECTION", "sqlsrv:server=00000;Database=00000");
+define("HRPORTAL_USERADMIN", "00000");
+define("HRPORTAL_PASSWORDADMIN", "00000");
 
 class DatabaseConnection 
 {
