@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+}
+
+input[type=number] {
+        -moz-appearance: textfield;
+}
+
+body {
+        background-color: #005aaa;
+}
+
+.help {
+        display: flex;
+        font-size: 2.5rem;
+        justify-content: right;
+}
+
+.help a {
+        color: #EDF1FF;
+        cursor: pointer;
+        margin: .5rem 1.5rem;
+}
+
+.card-body {
+        width: 720px;
+        height: 100%;
+        background-color: #fff;
+        margin: 5rem auto;
+        padding-bottom: 4rem;
+        border-radius: 10px;
+}
+
+.appName {
+        font-size: 1.8rem;
+        padding: 4rem 4rem 2rem 4rem;
+}
+
+.appName span {
+        display: flex;
+        color: #aaa;
+        font-size: 1rem;
+}
+
+.form-rows {
+        padding: 0 4rem;
+        display: flex;
+        width: 100%;
+        margin-bottom: .5rem;
+}
+
+.form-rows-days {
+        padding: 0 4rem;
+        margin-bottom: .5rem;
+}
+
+.form-cols {
+        flex: 50%;
+        margin: 0 1rem;
+}
+
+.form-cols > * {
+        display: block;
+}
+
+.form-cols-days {
+        margin: 0 1rem;
+}
+
+.form-cols-days label {
+        display: block;
+}
+
+.workday {
+        display: flex;
+        align-items: center;
+        background-color: #eee;
+        padding: .8rem 1rem;
+        border-radius: 5px;
+}
+
+.workday input {
+        margin-right: .6rem;
+}
+
+.workday span {
+        padding-right: .8rem;
+        cursor: pointer;
+}
+
+.form-cols input {
+        padding: .8rem 1rem;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+}
+
+.form-cols select {
+        padding: .8rem 1rem;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+}
+
+.btnsubmit {
+        margin: 2rem 5rem;
+        display: flex;
+        justify-content: center;
+}
+
+.btnsubmit button {
+        padding: .5rem 1rem;
+        width: 100%;
+        font-size: 1rem;
+        color: #fff;
+        border: 1px solid #005aaa;
+        background-color: #005aaa;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .2s;
+}
+
+.btnsubmit button:hover {
+        background-color: #fff;
+        color: #005aaa;
+        transition: .2s;
+}
+
+.callback {
+        display: none;
+        background-color: #eee;
+        margin: 0 4rem;
+        padding: 1.2rem 2rem;
+        border-radius: 5px;
+}
+
+.indexlink {
+        background-color: #eee;
+        margin: 0 4rem;
+        padding: 1.2rem 2rem;
+        border-radius: 5px;
+}
+
+.indexlink a {
+        text-decoration: none;
+        color: #005aaa;
+}
+
+.form-activate-rows {
+        padding: 0 4rem;
+        display: flex;
+        width: 100%;
+        margin-bottom: .5rem;
+}
+
+.form-activate-cols {
+        margin: 0 1rem;
+}
+
+.cols-left {
+        flex: 80%;
+}
+
+.cols-right {
+        flex: 20%;
+        align-self: flex-end;
+}
+
+.cols-right button {
+        padding: .5rem 1rem;
+        margin-bottom: .1rem;
+        width: 100%;
+        font-size: 1rem;
+        background-color: #005aaa;
+        border: 1px solid #005aaa;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        transition: .2s;
+}
+
+.cols-right button:hover {
+        background-color: #fff;
+        color: #005aaa;
+        transition: .2s;
+}
+
+.form-activate-cols label, input {
+        display: block;
+}
+
+.form-activate-cols input {
+        padding: .8rem 1rem;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+}
+
+.list-users-registered {
+        padding: 2rem;
+        display: none;
+}
+
+.list-users-registered table {
+        width: 100%;
+}
+
+table th {
+        background-color: #005aaa;
+        padding: .3rem .5rem;
+        color: #fff;
+        font-weight: normal;
+}
+
+table td {
+        padding: .1rem 0rem;
+        text-align: center;
+        background-color: #eee;
+}
+
+.list-users-registered .start {
+        color: #009B77;
+}
+
+.list-users-registered .delete {
+        color: #DD4124;
+}
+
+.list-users-registered .stop {
+        color: #00539C;
+}
+
+.list-users-registered .remark {
+        margin: 1rem 0 0 .2rem;
+}
+
+.list-users-registered span {
+        padding-right: .5rem;
+}
+
+.list-users-registered a {
+        margin: auto .5rem;
+}
+
+.fwidth {
+        max-width: 200px;
+        padding-left: .5rem;
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}
+
+.pointer {
+        cursor: pointer;
+}
+
+.form-keycode {
+        width: 100%;
+}
+
+.form-keycode-row {
+        width: 40%;
+        text-align: center;
+        margin: 1rem auto;
+}
+
+.form-keycode-row input {
+        padding: .8rem 1rem;
+        width: 100%;
+        text-align: center;
+        background-color: #eee;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+}
+
+.form-keycode-row button {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        background-color: #005aaa;
+        border: 1px solid #005aaa;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        transition: .2s;
+}
+
+.form-keycode-row button:hover {
+        background-color: #fff;
+        color: #005aaa;
+        transition: .2s;
+}
+
+#form-keycode {
+        display: none;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>:: Haier Line Notify ::</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/help.css">
+</head>
+<body>
+
+        <div class="tabmenu">
+                <div class="tablist" id="linkline">
+                        <span><a>ขั้นตอนการขอ Line Token</a></span>
+                </div>
+                <div class="tablist" id="linkfinger">
+                        <span><a>ขั้นตอนการลงทะเบียน Finger scan</a></span>
+                </div>
+                <div class="tablist" id="linktoactive">
+                        <span><a>ขั้นตอนการเปิด-ปิด การใช้งานการรับข้อมูล</a></span>
+                </div>
+        </div>
+        
+        <div class="content" id="token-create">
+                <h1>วิธีขอ Token สำหรับ Line Notify ส่งข้อความเข้าไลน์</h1>
+                <article>
+                        <h3>1. ไปที่ลิงค์ <a href="https://notify-bot.line.me/en/">https://notify-bot.line.me/en/</a></h3>
+                        <p>- กรอก "อีเมล์" (E-mail) และ "รหัสผ่าน" (Password) Line ของเรา</p>
+                        <p>- คลิกปุ่ม "Login" ดังรูป</p>
+                        <img src="./img/linelogin.png" width="300px" alt="haier-line-notify">
+                </article>
+
+                <article>
+                        <h3>2. ยืนยันการ "Login" ผ่านมือถือที่มี Line ของเรา</h3>
+                        <p>- โดยการกรอกรหัสที่แสดงบนหน้าเว็บ ดังรูป</p>
+                        <img src="./img/linecodeconfirm.png" width="300px" alt="haier-line-notify">
+                        <img src="./img/lineverification.png" width="390px" alt="haier-line-notify">
+                </article>
+
+                <article>
+                        <h3>3. หลังจาก "Login" เข้าสุ่ระบบแล้ว สังเกตมุมบนขวามือ คลิกที่ชื่อไลน์ของเรา</h3>
+                        <p>- คลิกที่เมนู "หน้าของฉัน" (My page) ดังรูป</p>
+                        <img src="./img/linemenu.png" alt="haier-line-notify">
+                </article>
+
+                <article>
+                        <h3>4. ภายใต้หัวข้อ Generate access token (For developers)</h3>
+                        <p>- ให้คลิกที่ปุ่ม "Generate token" ดังรูป</p>
+                        <img src="./img/linetokenbtn.png" width="768px" alt="haier-line-notify">
+                </article>
+
+                <article>
+                        <h3>5. หน้าสำหรับออก Token ของเราจะแสดงขึ้นมา</h3>
+                        <p>- ในช่องว่างช่องแรก ให้เรากรอกชื่อ token ที่เราต้องการลงไป เช่น Time, Fingers โดยชื่อนี้จะเป็นชื่อที่ส่งข้อความมาหาเรา</p>
+                        <p>- หลังจากนั้น ให้คลิกที่ชื่อไลน์ของเรา (1-on-1 chat with LINE Notify) ดังรูป</p>
+                        <p>- คลิกที่ปุ่ม "Generate token" หรือ "ปุ่ม ออก Token" ที่อยู่ด้านล่างสุด</p>
+                        <img src="./img/linegettoken.png" width="384px" alt="haier-line-notify">
+                </article>
+
+                <article>
+                        <h3>6. จากนั้น จะปรากฎหน้าต่างรหัส Token ดังรูป</h3>
+                        <p>- คลิกปุ่มคัดลอก นำไปบันทึกไว้ในที่ปลอดภัย</p>
+                        <img src="./img/linetokencopy.png" width="384px" alt="haier-line-notify">
+                </article>
+        </div>
+        <!-- Request LINE Notify Token -->
+
+        <div class="content" id="finger-register">
+                <h1>วิธีลงทะเบียนขอข้อมูลการสแกนนิ้ว</h1>
+                <article>
+                        <h3>1. ไปที่ลิงค์ <a target="_blank" href="http://10.35.10.47/haierfingerscan/register.html">http://10.35.10.47/haierfingerscan/register.html</a></h3>
+                        <p>- ส่วนแรกกรอก "รหัสพนักงาน" และ "ชื่อ-นามสกุล" จากนั้น Copy Token ของเราลงในช่อง Line Token</p>
+                        <img src="./img/registertop.png" width="500px" alt="haier-line-notify">
+                </article>
+
+                <article>
+                        <h3>2. เลือกรูปแบบและประเภท (Department / Division) ที่ต้องการข้อมูล</h3>
+                        <p>- โดยรูปแบบจะแบ่งออกเป็น 2 แบบคือ รายละเอียด (Time by person) และสรุปยอดรวม (Summary)</p>
+                        <img src="./img/registermid.png" width="500px" alt="haier-line-notify">
+                        <p>- ตัวอย่างรูปแบบ โดยแบบรายละเอียด จะประกอบด้วยชื่อหน่วยงาน ตามด้วยเวลาสแกนนิ้วของแต่ละบุคคลในหน่วยงาน</p>
+                        <p>- และแบบสรุปยอดรวมจะประกอบด้วย ชื่อหน่วยงาน ตามด้วยจำนวนคน (จำนวนคนที่สแกนนิ้ว/จำนวนคนทั้งหมดในหน่วยงาน) ดังรูปด้านล่าง</p>
+                        <img src="./img/linetextdetail.png" width="" alt="haier-line-notify">
+                        <img src="./img/linetextsummary.png" width="" alt="haier-line-notify">
+                </article>
+
+                <article>
+                        <h3>3. ระบุวันที่ต้องการข้อมูล</h3>
+                        <p>- สามารถคลิกเลือกรับข้อมูลตามวันที่เราต้องการได้ จากนั้นคลิก Submit</p>
+                        <img src="./img/registerbottom.png" width="" alt="haier-line-notify">
+                        <p>- เมื่อลงทะเบียนสำเร็จระบบจะแสดงข้อความ Register successfully.</p>
+                        <img src="./img/registersuccess.png" width="" alt="haier-line-notify">
+                </article>
+        </div>
+        <!-- Request Finger scan Information -->
+
+        <div class="content" id="active-finger">
+                <h1>วิธีลงเปิดการใช้งาน ปิดการใช้งาน และลบรายการที่ลงทะเบียนไว้</h1>
+                <article>
+                        <h3>1. ไปที่ลิงค์ <a target="_blank" href="http://10.35.10.47/haierfingerscan/activate.html">http://10.35.10.47/haierfingerscan/activate.html</a></h3>
+                        <p>- กรอกรหัสพนักงานที่ได้ทำการลงทะเบียนไว้แล้ว จากนั้นคลิก Submit</p>
+                        <img src="./img/activeinput.png" width="500px" alt="haier-line-notify">
+                </article>
+
+                <article>
+                        <h3>2. ระบบจะแสดงรายการที่ได้ลงทะเบียนไว้ โดยสถานะ Activated = เปิดใช้งาน, Inactivated = ปิดการใช้งาน</h3>
+                        <p>- คลิกที่ Icon <i class="fa fa-play start" aria-hidden="true"></i> เพื่อเปิดใช้งาน</p>
+                        <p>- คลิกที่ Icon <i class="fa fa-stop stop" aria-hidden="true"></i> เพื่อปิดใช้งาน</p>
+                        <p>- คลิกที่ Icon <i class="fa fa-trash delete" aria-hidden="true"></i> เพื่อลบรายการ</p>
+                        <img src="./img/activeoperations.png" width="500px" alt="haier-line-notify">
+                </article>
+
+                <article>
+                        <h3>3. กรอกรหัส OTP เพื่อยืนยันการทำรายการ</h3>
+                        <p>- หลังจากที่คลิกดำเนินการต่างๆ ระบบจะส่ง OTP ไปที่ LINE Notify ดังรูปด้านล่าง</p>
+                        <img src="./img/otpmessages.png" width="" alt="haier-line-notify">
+                        <p>- นำรหัส OTP กรอกลงในแบบฟอร์ม จากนั้นคลิกที่ Submit เป็นอันจบขั้นตอน</p>
+                        <img src="./img/otpform.png" width="" alt="haier-line-notify">
+                </article>
+        </div>
+        <!-- Set activate/inactivate that registered -->
+
+<script src="./js/help.js"></script>
+</body>
+</html>

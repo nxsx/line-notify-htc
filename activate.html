@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>:: Haier Line Notify ::</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+        
+        <div class="card-body">
+                <div class="appName">
+                        HTC Finger scan time - Line App
+                        <span>Activate/inactivate your status</span>
+                </div>
+
+                <form action="#" id="form-activate">
+                        <div class="form-activate-rows">
+                                <div class="form-activate-cols cols-left">
+                                        <label for="empid">Employee Id</label>
+                                        <input type="text" name="empid" id="empid" required>
+                                </div>
+                                <div class="form-activate-cols cols-right">
+                                        <button id="btnsubmit">Submit</button>
+                                </div>
+                        </div>
+                </form>
+
+                <div class="list-users-registered" id="displaylist">
+                        <table>
+                                <thead>
+                                        <tr>
+                                                <th>#</th>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Status</th>
+                                                <th>Operations*</th>
+                                        </tr>
+                                </thead>
+                                <tbody id="listbody">
+                                        <tr>
+                                                <td>1</td>
+                                                <td>Group Division</td>
+                                                <td class="fwidth">Strategy & Operation</td>
+                                                <td>Inactivated</td>
+                                                <td>
+                                                        <a class="start" href=""><i class="fa fa-play" aria-hidden="true"></i></a>
+                                                        <a class="delete" href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+
+                        <div class="remark">
+                                <span>Operations* </span>
+                                <span><i class="fa fa-play start" aria-hidden="true"></i> = Activate,</span>
+                                <span><i class="fa fa-stop stop" aria-hidden="true"></i> = Inactivate,</span>
+                                <span><i class="fa fa-trash delete" aria-hidden="true"></i> = Delete</span>
+                        </div>
+                </div>
+
+                <form action="#" id="form-keycode">
+                        <div class="form-keycode">
+                                <div class="form-keycode-row">
+                                        <label for="otpinput">Confirm OTP (Ref: <b id="refdisplay">OUAS</b>)</label>
+                                        <input type="password" name="otpinput" id="otpinput" minlength="6" maxlength="6" required>
+                                </div>
+                                <div class="form-keycode-row">
+                                        <button id="otpsubmit">Submit</button>
+                                        <button type="reset" id="otpcancel">Cancel</button>
+                                </div>
+                        </div>
+                </form>
+        </div>
+        
+<script src="./js/activate.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>:: Haier Line Notify ::</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+
+        <div class="card-body">
+                <div class="appName">
+                        HTC Finger scan time - Line App
+                        <span>Registration Form</span>
+                </div>
+
+                <form action="#" id="form-register">
+                        <div class="form-rows">
+                                <div class="form-cols">
+                                        <label for="empid">Employee Id</label>
+                                        <input type="text" name="empid" id="empid" required>
+                                </div>
+                                <div class="form-cols">
+                                        <label for="empname">Employee Name</label>
+                                        <input type="text" name="empname" id="empname" required>
+                                </div>
+                        </div>
+                        <div class="form-rows">
+                                <div class=form-cols>
+                                        <label for="emptoken">Line Token</label>
+                                        <input type="text" name="emptoken" id="emptoken" required>
+                                </div>
+                        </div>
+                        <div class="form-rows">
+                                <div class="form-cols">
+                                        <label for="messageform">Message Form</label>
+                                        <select name="messageform" id="messageform" required>
+                                                <option value="">Please select options .....</option>
+                                                <option value="1">Time by person</option>
+                                                <option value="2">Summary by scan/all</option>
+                                        </select>
+                                </div>
+                        </div>
+                        <div class="form-rows">
+                                <div class="form-cols">
+                                        <label for="messagetype">Message Type</label>
+                                        <select name="messagetype" id="messagetype" required disabled>
+                                                <option value="">Please select options .....</option>
+                                        </select>
+                                </div>
+                        </div>
+                        <div class="form-rows">
+                                <div class="form-cols">
+                                        <label for="typecode">Type of Departmet or Division</label>
+                                        <select name="typecode" id="typecode" required disabled>
+                                                <option value="">Please select options .....</option>
+                                        </select>
+                                </div>
+                        </div>
+                        <div class="form-rows-days">
+                                <div class="form-cols-days">
+                                        <label for="">Days of workday</label>
+                                        <div class="workday">
+                                                <input type="checkbox" name="" id="isMonday">
+                                                <span id="forMonday">Monday</span>
+                                                <input type="checkbox" name="" id="isTuesday">
+                                                <span id="forTuesday">Tuesday</span>
+                                                <input type="checkbox" name="" id="isWednesday">
+                                                <span id="forWednesday">Wednesday</span>
+                                                <input type="checkbox" name="" id="isThursday">
+                                                <span id="forThursday">Thursday</span>
+                                                <input type="checkbox" name="" id="isFriday">
+                                                <span id="forFriday">Friday</span>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="form-rows-days">
+                                <div class="form-cols-days">
+                                        <label for="">Days of weekend</label>
+                                        <div class="workday">
+                                                <input type="checkbox" name="" id="isSaturday">
+                                                <span id="forSaturday">Saturday</span>
+                                                <input type="checkbox" name="" id="isSunday">
+                                                <span id="forSunday">Sunday</span>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="btnsubmit">
+                                <button id="btnsubmit">Submit</button>
+                        </div>
+                </form>
+
+                <div class="callback" id="msgCallback"></div>
+        </div>
+
+<script src="./js/register.js"></script>
+</body>
+</html>
