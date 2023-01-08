@@ -43,7 +43,7 @@ const setActivation = (e, token, keycode) => {
         
         fetchPost(url, req).then(data => {
                 local.data = data;
-                local.link = 'http://190.7.10.27/wmsapi/linenotify/setactivated.php';
+                local.link = './line-notify-htc/back/setactivated.php';
                 refdisplay.textContent = local.data.ref;
 
                 formactivate.style.display = "none";
@@ -76,7 +76,7 @@ const setInactivation = (e, token, keycode) => {
         
         fetchPost(url, req).then(data => {
                 local.data = data;
-                local.link = 'http://190.7.10.27/wmsapi/linenotify/setinactivated.php';
+                local.link = './line-notify-htc/back/setinactivated.php';
                 refdisplay.textContent = local.data.ref;
 
                 formactivate.style.display = "none";
@@ -109,7 +109,7 @@ const setDeleteCode = (e, token, keycode) => {
         
         fetchPost(url, req).then(data => {
                 local.data = data;
-                local.link = 'http://190.7.10.27/wmsapi/linenotify/setdeleted.php';
+                local.link = './line-notify-htc/back/setdeleted.php';
                 refdisplay.textContent = local.data.ref;
 
                 formactivate.style.display = "none";
@@ -165,7 +165,7 @@ const getLinkActivation = (status, token, keycode) => {
 };
 
 const getRegisterList = (id) => {
-        const url = `http://190.7.10.27/wmsapi/linenotify/registerlist.php?id=${id}`;
+        const url = `./line-notify-htc/back/registerlist.php?id=${id}`;
         fetchGet(url).then(data => {
                 listbody.innerHTML = '';
 

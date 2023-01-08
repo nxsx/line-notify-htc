@@ -109,13 +109,13 @@ const sendCongrats = (token, desc) => {
 const setTypeUri = (type) => {
         switch (type) {
                 case 'PS':
-                        return 'http://190.7.10.27/wmsapi/linenotify/process.php';
+                        return './line-notify-htc/back/process.php';
                         break;
                 case 'DV':
-                        return 'http://190.7.10.27/wmsapi/linenotify/division.php';
+                        return './line-notify-htc/back/division.php';
                         break;
                 default:
-                        return 'http://190.7.10.27/wmsapi/linenotify/groupdivision.php';
+                        return './line-notify-htc/back/groupdivision.php';
         }
 };
 
@@ -153,7 +153,7 @@ messagetype.addEventListener('change', (e) => {
 form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const url = 'http://190.7.10.27/wmsapi/linenotify/register.php';
+        const url = './line-notify-htc/back/register.php';
         const { monday, tuesday, wednesday, thursday, friday, saturday, sunday } = daybox;
         const req = {
                 empid: empid.value,
